@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap');
+*{
+    outline: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: none;
+    border: none;
+    box-sizing: border-box;
+    line-height: 1.6;
+
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+
+    font-size: .9rem;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.intro{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: capitalize;
+
+}
+.img{
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+.card{
+    box-shadow: .1rem .1rem .3rem blue;
+    padding: 1rem;
+}
+.btn{
+    border-radius: .5rem;
+    background-color: var(--primary-light-color);
+    color: var(--white);
+    transition: var(--transition);
+    padding: 1rem 2.5rem;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+:root{
+    --primary-color: #010128;
+    --primary-light-color: #080848;
+    --secondary-color: #ff0000;
+    --white: #fff;
+    --black:#000;
+    --black-light: #0000;
+    --transition: all 2s ease;
+}
+/*  */
+/* navbar */
+.navbar{
+    background-color: var(--primary-color);
+    height: 11vh;
+    padding: .9rem 0;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+
+}
+.navbar .nav-container{
+    display: flex;
+    align-items: center;
+}
+.navbar .nav-container .logo, footer .logo{
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--white);
+}
+.navbar .nav-container .logo>span , footer .logo>span{
+    color: var(--secondary-color)
+}
+.navbar .nav-container ul{
+    text-align: end;
+    flex-grow: 2;
+}
+.navbar .nav-container li , footer li{
+    display: inline;
+}
+.navbar .nav-container li a{
+    color: var(--white);
+    font-size: 1rem;
+    padding: 1rem 1rem;
+    text-transform: capitalize;
+    transition: var(--transition);
+}
+.navbar .nav-container li a.active{
+    color: var(--secondary-color)
+}
+.navbar .nav-container li a:hover{
+    background-color: var(--secondary-color);
+    color: var(--white);
+}
+/*  */
+/* banner */
+#banner{
+    height: 90vh;
+    background-image: url(/assets/img/banner.jpg);
+    background-size: cover;
+    position: relative;
+
+}
+#banner .ban-dark{
+    background-color: rgba(0, 0, 0, 0.473);
+    height: 100%;
+}
+#banner .ban-content{
+    position: absolute;
+    top: 125px;
+    text-align: center;
+    color: var(--white);
+}
+#banner .ban-content h1{
+    font-size: 3rem;
+    font-weight: 200;
+}
+#banner .ban-content h1>span{
+    color: var(--secondary-color);
+    font-weight: 300;
+}
+#banner .ban-content p{
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+}
+#banner .ban-content .btn-ban{
+    background-color: transparent;
+    border: 2px solid var(--primary-light-color);
+}
+#banner .ban-content .btn-ban:hover{
+    background-color: var(--primary-light-color);
+    letter-spacing: 2px;
+}
+
+
+
+/* services */
+/* services */
+
+#services{
+    margin: 1rem 0rem;
+}
+
+#services .services-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    
+}
+
+#services .services-container .card{
+    text-align: center;
+    margin: .1rem 0;
+    transform: var(--transition)
+
+}
+
+#services .services-container .card i{
+    color: var(--white);
+    background-color: var(--primary-light-color);
+    padding: .8rem;
+    border-radius: 50px;
+    font-size: 2.5rem;
+    float: center;
+
+}
+
+#services .services-container .card:hover{
+    transform: translateY(10px)
+}
+
+#services .services-container .card:hover i{
+    background-color: var(--secondary-color);
+}
+
+/*  */
+/*  */
+/* testimonial */
+
+#testimonial .testi-container{
+    text-align: center;
+    border: 1px solid red;
+    padding: 1.5rem 0;
+
+
+}
+
+#testimonial .testi-container .slider-content img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+
+
+}
+
+#testimonial .testi-container .slider-content p{
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+}
+
+
+
+
+
+/* footer */
+/* footer */
+
+footer{
+    background-color: var(--primary-color);
+    padding: 1rem;
+    margin-top: 4rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
